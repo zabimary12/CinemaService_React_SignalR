@@ -1,0 +1,35 @@
+.videoWrapper{
+    position: relative;
+}
+
+.videoControls{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: pink;
+}
+.videoControlsPlay{
+    position: absolute;
+    left: 0;
+    background-color: brown;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoControlsProgress{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+}
+.videoControlsProgress::-webkit-slider-runnable-track{
+    height: 7px;
+    background-color: black;
+    &:focus{
+        border:none;
+    }
+}
